@@ -16,11 +16,11 @@ function App() {
                 <AuthProvider>
                 <Header/>
                 <Routes>
-                    <Route path="/" element={
+                    <Route path="/frontend/" element={
                         <PrivateRoute>
                             <HomePage/>
                         </PrivateRoute>}/>
-                    <Route path="/login" element={<LoginPage/>}/>
+                    <Route path="/frontend/login" element={<LoginPage/>}/>
                 </Routes>
                 </AuthProvider>
             </Router>
